@@ -1,0 +1,84 @@
+body {
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+	font: 20px Calibri;
+}
+
+#mainBox {
+	width: 520px;
+	border: 5px solid #fff;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 50px;
+	padding: 20px;
+}
+
+#appNameDiv  {
+	font: 60px Calibri;
+}
+
+#dataDiv {
+	display: none;
+}
+
+
+/* current weather */
+#locationDiv {
+	font: 30px Calibri;
+	margin-bottom: 15px;
+}
+.dataRow {
+	padding: 5px;
+	font: 22px Calibri;
+}
+#cloudsDiv {
+	margin-top: 20px;
+}
+
+
+/* next days */
+.dayColumn {
+	border: 2px solid #fff;
+	border-radius: 8px;
+	font: 16px Calibri;
+}
+.dayName {
+	font: 20px Calibri;
+	margin-bottom: 10px;
+}
+
+
+/* temperature symbols */
+.dayTempSymbol {
+	color: #28b;
+}
+.dayTempSymbol:hover {
+	color: #269;
+	cursor: pointer;
+}
+
+
+/* my footer */
+#byDiv {
+	margin-top: 5px;
+	font: 14px Calibri;
+	color: #ddd;
+}
+
+
+/* loader */
+.loader {
+	margin: auto;
+	margin-bottom: 20px;
+  border: 6px solid #555;
+  border-top: 6px solid #ddd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

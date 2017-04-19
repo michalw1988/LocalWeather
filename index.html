@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>My local weather</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Bootstrap, Font Awesome and jQuery files -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- My own CSS file -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- JS logic -->
+		<script src="script.js"></script> 
+	</head>
+	
+	<body>
+	
+		<div id="mainBox">
+			<div id="appNameDiv">My local weather</div>
+			<br>
+			
+			<!-- content displayed during loading data -->
+			<div id="loadingDataDiv">
+				 <div class="loader"></div>
+				 Loading weather data...
+			</div>
+			
+			<!-- content displayed when data is loaded -->
+			<div id="dataDiv">
+			
+				<!-- current weather data -->
+				<div class="dataRow" id="locationDiv"><span id="citySpan">...</span>, <span id="countryCodeSpan">...</span></div>
+				<div class="dataRow">Temperature: <span class="dayTemp">...</span> <span class="dayTempSymbol">&#8451;</span></div>
+				<div class="dataRow">Wind: <span id="windSpan">...</span></div>
+				<div class="dataRow" id="cloudsDiv"><span id="cloudsSpan">...</span></div>
+				<div class="dataRow"><span id="iconSpan">...</span></div>
+				
+				<!-- weather data for next 3 days -->
+				<div class="row">
+					<!-- tomorrow -->
+					<div class="col-sm-4">
+						<div class="dayColumn">
+							<div id="day1">day 1</div>
+						</div>
+					</div>
+					<!-- day +2 -->
+					<div class="col-sm-4">
+						<div class="dayColumn">
+							<div id="day2">day 2</div>
+						</div>
+					</div>
+					<!-- day +3 -->
+					<div class="col-sm-4">
+						<div class="dayColumn">
+							<div id="day3">day 3</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="byDiv">by Michał Wiśniewski (MW Projects)</div>		
+	</body>
+<html>
